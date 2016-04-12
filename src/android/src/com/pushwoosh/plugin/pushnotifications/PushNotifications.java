@@ -25,16 +25,16 @@ import android.util.Log;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 
-import com.arellomobile.android.push.BasePushMessageReceiver;
-import com.arellomobile.android.push.PushManager;
-import com.arellomobile.android.push.PushPersistance;
-import com.arellomobile.android.push.PushManager.GetTagsListener;
-import com.arellomobile.android.push.SendPushTagsCallBack;
-import com.arellomobile.android.push.preference.SoundType;
-import com.arellomobile.android.push.preference.VibrateType;
-import com.arellomobile.android.push.utils.PreferenceUtils;
-import com.arellomobile.android.push.utils.RegisterBroadcastReceiver;
-import com.arellomobile.android.push.utils.rich.RichPushUtils;
+import com.pushwoosh.BasePushMessageReceiver;
+import com.pushwoosh.PushManager;
+import com.pushwoosh.PushPersistance;
+import com.pushwoosh.PushManager.GetTagsListener;
+import com.pushwoosh.SendPushTagsCallBack;
+import com.pushwoosh.preference.SoundType;
+import com.pushwoosh.preference.VibrateType;
+import com.pushwoosh.utils.PreferenceUtils;
+import com.pushwoosh.utils.RegisterBroadcastReceiver;
+import com.pushwoosh.utils.rich.RichPushUtils;
 import com.google.android.gcm.GCMRegistrar;
 
 import org.apache.cordova.CallbackContext;
