@@ -1,34 +1,3 @@
-Current version: 3.6.14
-=========================
-Fixed double alerts on iOS9
-Current version: 3.6.13
-=========================
-Fixed https://github.com/Pushwoosh/pushwoosh-phonegap-3.0-plugin/issues/133
-Current version: 3.6.12
-=========================
-Fixed https://github.com/Pushwoosh/pushwoosh-phonegap-3.0-plugin/issues/132
-Current version: 3.6.11
-=========================
-Application icon badge number for Android
-Current version: 3.6.10
-=========================
-Actual fixes for 3.6.8 and 3.6.9
-Current version: 3.6.9
-=========================
-fixed https://github.com/Pushwoosh/pushwoosh-phonegap-3.0-plugin/issues/129
-Current version: 3.6.8
-=========================
-Fixed XCode 7 warnings
-iOS log level management
-Current version: 3.6.7
-=========================
-Remote notification tag identifier for Android
-Current version: 3.6.6
-=========================
-iOS 9 support
-Current version: 3.6.5
-=========================
-Fixed plugin incompatibility
 Current version: 3.6.4
 =========================
 Pushwoosh library update

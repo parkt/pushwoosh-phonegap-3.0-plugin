@@ -127,22 +127,8 @@ typedef void(^PushwooshErrorHandler)(NSError *error);
  @param error An NSError object that encapsulates information why receiving tags did not succeed.
  */
 - (void) onTagsFailedToReceive:(NSError *)error;
-
-/**
- Tells the delegate that In-App with specified code has been closed
- 
- @param code In-App code
- */
-- (void) onInAppClosed:(NSString*)code;
-
-/**
- Tells the delegate that In-App with specified code has been displayed
- 
- @param code In-App code
- */
-- (void) onInAppDisplayed:(NSString*)code;
-
 @end
+
 
 /**
   `PWTags` class encapsulates the methods for creating tags parameters for sending them to the server.
@@ -469,17 +455,7 @@ typedef void(^PushwooshErrorHandler)(NSError *error);
  Set User indentifier. This could be Facebook ID, username or email, or any other user ID.
  This allows data and events to be matched across multiple user devices.
  */
-- (void) setUserId: (NSString*) userId;
-
-/**
- Move all events from oldUserId to newUserId if doMerge is true. If doMerge is false all events for oldUserId are removed.
- 
- @param oldUserId source user
- @param newUserId destination user
- @param doMerge if false all events for oldUserId are removed, if true all events for oldUserId are moved to newUserId
- @param completeion callback
- */
-- (void) mergeUserId: (NSString*) oldUserId to: (NSString*) newUserId doMerge: (BOOL) doMerge completion: (void(^)(NSError* error)) completion;
+- (void) setUserId: (NSString*) userId; 
 
 /**
  Post events for In-App Messages. This can trigger In-App message display as specified in Pushwoosh Control Panel.
