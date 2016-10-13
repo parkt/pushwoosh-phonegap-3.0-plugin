@@ -60,8 +60,15 @@
 				<!-- Push notification services -->
 				<activity android:name="com.pushwoosh.MessageActivity" />
 				<activity android:name="com.pushwoosh.PushHandlerActivity" />
-
+                <!--
 				<receiver android:name="com.google.android.gms.gcm.GcmReceiver" android:exported="true" android:permission="com.google.android.c2dm.permission.SEND">
+					<intent-filter>
+						<action android:name="com.google.android.c2dm.intent.RECEIVE" />
+						<category android:name="com.parkt.beacon" />
+					</intent-filter>
+				</receiver>
+				-->
+				<receiver android:name="com.pushwoosh.thirdparty.gms.gcm.GcmReceiver" android:exported="true" android:permission="com.google.android.c2dm.permission.SEND">
 					<intent-filter>
 						<action android:name="com.google.android.c2dm.intent.RECEIVE" />
 						<category android:name="com.parkt.beacon" />
