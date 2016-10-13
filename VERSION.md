@@ -1,3 +1,12 @@
+Current version: 3.6.5
+=========================
+Fixed plugin incompatibility
+Current version: 3.6.4
+=========================
+Pushwoosh library update
+Current version: 3.6.3
+=========================
+Using Google Play Services and Android Support v4 libraries
 Current version: 3.6.2
 =========================
 plugin.xml update
