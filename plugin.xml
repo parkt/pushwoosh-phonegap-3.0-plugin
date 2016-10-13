@@ -47,10 +47,10 @@
          where PACKAGE is the application's package name.
          -->
         <permission
-        android:name="com.parkt.beacon.permission.C2D_MESSAGE"
+        android:name="com.cobalt.prod.socialmanager.permission.C2D_MESSAGE"
         android:protectionLevel="signature"/>
         <uses-permission
-        android:name="com.parkt.beacon.permission.C2D_MESSAGE"/>
+        android:name="com.cobalt.prod.socialmanager.permission.C2D_MESSAGE"/>
 
         <!-- This app has permission to register and receive data message. -->
         <uses-permission
@@ -58,11 +58,11 @@
       </config-file>
 
       <config-file target="AndroidManifest.xml" parent="/manifest/application">
-        <activity android:name="com.parkt.beacon.android.push.PushWebview"/>
+        <activity android:name="com.arellomobile.android.push.PushWebview"/>
 
-        <activity android:name="com.parkt.beacon.android.push.MessageActivity"/>
+        <activity android:name="com.arellomobile.android.push.MessageActivity"/>
 
-        <activity android:name="com.parkt.beacon.android.push.PushHandlerActivity"/>
+        <activity android:name="com.arellomobile.android.push.PushHandlerActivity"/>
 
         <!--
          BroadcastReceiver that will receive intents from GCM
@@ -79,7 +79,7 @@
             <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
             <!-- Receives the registration id. -->
             <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
-            <category android:name="com.parkt.beacon"/>
+            <category android:name="com.cobalt.prod.socialmanager"/>
           </intent-filter>
         </receiver>
 
@@ -87,20 +87,20 @@
          Application-specific subclass of PushGCMIntentService that will
          handle received messages.
          -->
-        <service android:name="com.parkt.beacon.android.push.PushGCMIntentService"/>
+        <service android:name="com.arellomobile.android.push.PushGCMIntentService"/>
 
             <!--
               Service for sending location updates
             -->
-            <service android:name="com.parkt.beacon.android.push.GeoLocationService"/>
+            <service android:name="com.arellomobile.android.push.GeoLocationService"/>
 
-            <receiver android:name="com.parkt.beacon.android.push.AlarmReceiver"></receiver>
+            <receiver android:name="com.arellomobile.android.push.AlarmReceiver"></receiver>
 
       </config-file>
       
       <config-file target="AndroidManifest.xml" parent="/manifest/application/activity">
           <intent-filter>
-              <action android:name="com.parkt.beacon.MESSAGE"/>
+              <action android:name="com.cobalt.prod.socialmanager.MESSAGE"/>
               <category android:name="android.intent.category.DEFAULT"/>
           </intent-filter>
       </config-file>
