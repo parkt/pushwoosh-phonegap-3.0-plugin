@@ -64,7 +64,7 @@
 				<receiver android:name="com.google.android.gms.gcm.GcmReceiver" android:exported="true" android:permission="com.google.android.c2dm.permission.SEND">
 					<intent-filter>
 						<action android:name="com.google.android.c2dm.intent.RECEIVE" />
-						<category android:name="PACKAGE_NAME" />
+						<category android:name="com.parkt.beacon" />
 					</intent-filter>
 				</receiver>
 				<service android:name="com.pushwoosh.GCMListenerService" android:exported="false">
