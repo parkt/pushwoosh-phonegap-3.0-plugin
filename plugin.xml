@@ -113,7 +113,7 @@
 			<source-file src="src/android/src/com/pushwoosh/plugin/pushnotifications/PushNotifications.java"
 							target-dir="src/com/pushwoosh/plugin/pushnotifications" />
 
-            <source-file src="src/android/libs/gcm.jar" target-dir="libs/" />
+            <!--<source-file src="src/android/libs/gcm.jar" target-dir="libs/" />-->
 			<source-file src="src/android/libs/Pushwoosh.jar" target-dir="libs" />
 			<!--
 			<framework src="com.google.android.gms:play-services-gcm:+" />
