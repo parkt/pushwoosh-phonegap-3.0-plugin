@@ -40,6 +40,10 @@
         <!-- So the sounds from assets folder could work for notification sounds. -->
         <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
+        <!-- enable backgroud tracking for geo-location. -->
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+          
         <!--
          Creates a custom permission so only this app can receive its messages.
 
