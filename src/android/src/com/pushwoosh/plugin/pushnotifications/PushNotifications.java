@@ -77,8 +77,8 @@ public class PushNotifications extends CordovaPlugin
 	{
 		super.onNewIntent(intent);
 
-		startPushData = getPushFromIntent(intent);
-		checkMessage(intent);
+		/*startPushData = getPushFromIntent(intent);
+		checkMessage(intent);*/
 	}
 
 	BroadcastReceiver mBroadcastReceiver = new RegisterBroadcastReceiver()
