@@ -145,7 +145,7 @@ public class PushNotifications extends CordovaPlugin
 	public void onPause(boolean multitasking)
 	{
 		super.onPause(multitasking);
-		//unregisterReceivers();
+		unregisterReceivers();
 	}
 
 	/**
